@@ -22,4 +22,9 @@ public class Main {
 
 The output that was expected when you compile this with JDK7 is `[, 1, 1, 1, 1, 1]` but when I compiled with JDK8 I've got `[1, 1, 1, 1, 1]`. After I've research a little bit around I've found an article on [stackoverflow] that explains it. I don't know but it seems a pretty big change with a possible huge impact.
 
+_99 little bugs in the code
+99 little bugs in the code
+Take one down, patch it around 117 little bugs in the code ...._ ([credit])
+
 [stackoverflow]: http://stackoverflow.com/questions/22718744/why-does-split-in-java-8-sometimes-remove-empty-strings-at-start-of-result-array
+[credit]:        https://twitter.com/irqed/status/358212928404586498
