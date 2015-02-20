@@ -2,14 +2,14 @@
 layout: post
 title: "String.split JDK7 vs JDK8"
 date: 2015-02-19 15:54:00
-categories: java, jdk, string, split
+categories: java jdk string regex split
 ---
 
 I've encounter today a strange behaviour from the most unexpected part of Java, String class.
 
 Consider this code:
 
-~~~ java
+{% highlight java %}
 import java.util.*;
 
 public class Main {
@@ -18,7 +18,8 @@ public class Main {
     System.out.println(Arrays.toString(test.split("")));
   }
 }
-~~~
+
+{% endhighlight %}
 
 The output that was expected when you compile this with JDK7 is `[, 1, 1, 1, 1, 1]` but when I compiled with JDK8 I've got `[1, 1, 1, 1, 1]`. After I've research a little bit around I've found an article on [stackoverflow] that explains it. I don't know but it seems a pretty big change with a possible huge impact.
 

@@ -1,12 +1,33 @@
-# Site settings
-title: namtzigla
-email: florin.stan@gmail.com
-description: > # this means to ignore newlines until "baseurl:"
-  random stuff that I've stuble upon.
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://namtzigla.github.io" # the base hostname & protocol for your site
-twitter_username: namtzigla
-github_username:  namtzigla
+title: "not much ... really"
+author: "Florin Stan"
+description: "random stuff that I found on the internet"
+more: "read more"
+url: "http://namtzigla.github.io"
+#baseurl: "/contrast" # comment out if in root directory
 
-# Build settings
-markdown: kramdown
+comments:
+#    disqus: "niklasbuschmann"
+#    isso: "comments.mysite.org"
+
+style:
+#    body: "whitesmoke"
+    padding: 33%
+    anchor: "#46f"
+    serif-heading: true
+    nav: "#181818"
+#    headline: "#06f"
+    description: "white"
+    article:
+        odd: "#ffffff"
+        even: "#222222"
+
+links:
+  - github: "https://github.com/namtzigla/"
+  - twitter: "https://twitter.com/namtzigla/"
+#  - google-plus: "https://plus.google.com/+me"
+#  - reddit: "https://www.reddit.com/user/me/"
+#  - youtube: "https://www.youtube.com/user/me"
+#  - steam: "http://steamcommunity.com/id/me/"
+
+excerpt_separator: "\n\n\n"
+defaults: [{scope: {path: ""}, values: {layout: "default"}}, {scope: {path: "", type: "posts"}, values: {comments: true}}]
