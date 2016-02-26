@@ -17,8 +17,9 @@ public class Main {
     System.out.println(Arrays.toString(test.split("")));
   }
 }
-
 {% endhighlight %}
+
+
 
 The output that was expected when you compile this with JDK7 is `[, 1, 1, 1, 1, 1]` but the suprise came when I compile it with JDK8 I've got `[1, 1, 1, 1, 1]`. After I research a little bit around I've found an article on [stackoverflow] that explains it. I don't know, but it seems a pretty big change with a possible huge impact.
 

@@ -22,6 +22,8 @@ sdcadm update: error: error reprovisioning VM 1c0f6702-467c-499c-872c-1347e2fa44
         cannot destroy snapshot zones/1c0f6702-467c-499c-872c-1347e2fa4442-reprovisioning-root@backup-1456455300: dataset is busy
 {% endhighlight %}
 
+
+
 To recover from this first you have to remove the snapshot first:
 {% highlight shell %}
 $ zfs holds  zones/1c0f6702-467c-499c-872c-1347e2fa4442@backup-1456455300
