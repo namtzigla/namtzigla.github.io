@@ -10,7 +10,7 @@ comments:
 #    isso: "comments.mysite.org"
 
 style:
-    body: "whitesmoke"
+    #body: "whitesmoke"
     padding: 20%
     anchor: "#46f"
     serif-heading: true
