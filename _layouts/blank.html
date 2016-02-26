@@ -29,9 +29,11 @@
     {% if site.subheading %}<div>{{ site.subheading }}</div>{% endif %}
 {{ content }}
     <footer>
-      <span><a href="{{ site.url }}">{% if page.author %}{{ page.author }}{% else %}{{site.author}}{% endif %}</a></span>
+      <span><a href="{{ site.url }}">{% if page.author %}{{ page.author }}{% else %}{{site.author}}{% endif %}</a> &copy; {{ site.time | date: "%Y" }}</span>
       <span>{% for link_hash in site.links %}{% for link in link_hash %}<a href="{{ link[1] }}"><i class="fa fa-{{ link[0] }}-square"></i></a>{% endfor %}{% endfor %}</span>
-      <span>&copy; {{ site.time | date: "%Y" }}</span>
+      <span></span>
+
+      <span><a href="http://github.com/niklasbuschmann">Theme by Niklas Buschmann</a></span>
     </footer>
   </body>
 </html>
